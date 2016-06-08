@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/baselayout"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text"
+        android:hint="选择你喜欢的运动"
+        android:textSize="30dp"
+        android:textColor="#ab17d4"
+        android:onClick="send"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text1"
+        android:textSize="30dp"
+        android:textColor="#0e6fe6"
+        android:onClick="send1"/>
+</LinearLayout>

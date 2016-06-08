@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/baselayout"/>
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="上一页"
+        android:id="@+id/btn1"
+        android:background="#18e7ea"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="下一页"
+        android:id="@+id/btn2"
+        android:background="#18e7ea"/>
+    </TableRow>
+</TableLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list1id">
+    </ListView>
+
+</LinearLayout>

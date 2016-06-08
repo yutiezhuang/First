@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/search" android:title="搜索"
+        android:showAsAction="always"
+        android:actionViewClass="android.widget.SearchView" />
+    <item android:showAsAction="always"
+        android:title="好运"
+        android:icon="@drawable/avatar2">
+        <menu>
+            <item android:id="@+id/font_10" android:title="春之梦ゾ醉" />
+            <item android:id="@+id/font_12" android:title="夏之雨ゾ伤" />
+            <item android:id="@+id/font_14" android:title="秋之风ゾ涩" />
+            <item android:id="@+id/font_16" android:title="冬之雪ゾ迷" />
+        </menu>
+    </item>
+    <item android:id="@+id/normal_btn" android:title="关于"
+        android:showAsAction="never"/>
+    <item android:id="@+id/normal_btn1" android:title="配置"
+        android:showAsAction="never"/>
+</menu>

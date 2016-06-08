@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/baselayout"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <Button
+            android:layout_width="90dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="60dp"
+            android:text="上一张"
+            android:textSize="20dp"
+            android:id="@+id/button1"
+            android:onClick="ting1"/>
+        <Button
+            android:layout_width="90dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="60dp"
+            android:text="透明++"
+            android:textSize="20dp"
+            android:id="@+id/button2"
+            android:onClick="ting2"/>
+        <Button
+        android:layout_width="90dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="60dp"
+        android:text="透明--"
+        android:textSize="20dp"
+        android:id="@+id/button3"
+            android:onClick="ting3"/>
+        <Button
+            android:layout_width="90dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="60dp"
+            android:text="下一张"
+            android:textSize="20dp"
+            android:id="@+id/button4"
+            android:onClick="ting4"/>
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/pic1"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/pic2"
+        android:layout_gravity="center">
+
+    </TextView>
+
+
+</LinearLayout>

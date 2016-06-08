@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <include layout="@layout/baselayout"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="管理"
+            android:textSize="25dp"
+            android:textColor="#09a9ed"
+            android:paddingTop="10dp"
+            android:paddingLeft="15dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="30dp"
+            android:id="@id/text"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/text"
+            android:id="@+id/btn1"
+            android:text="分组"
+            android:textSize="20dp"
+            android:background="#0b8be7"
+            android:paddingLeft="23dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btn1"
+            android:id="@+id/btn2"
+            android:text="全部"
+            android:textSize="20dp"
+            android:background="#6dea0827"
+            android:paddingRight="23dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/btn2"
+            android:id="@+id/image"
+            android:src="@drawable/imags1_1"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+   <ExpandableListView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/expandlist"
+       android:cacheColorHint="#0aea4d"
+       android:background="#09acc6c2"
+       >
+   </ExpandableListView>
+</LinearLayout>
