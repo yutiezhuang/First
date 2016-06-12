@@ -25,7 +25,7 @@ package com.example.admini.first;
 /**
  * Created by Administrator on 2016/6/7.
  */
-public class A0_49zuoye extends Activity {
+public class A0_49zuoye extends BaseActivity {
 
     EditText numbers,content;
     Button select,send;
@@ -33,8 +33,8 @@ public class A0_49zuoye extends Activity {
     ArrayList<String> sendlist = new ArrayList<String>();
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    protected void initContentView(Bundle savedInstanceState) {
+        //super.onCreate(savedInstanceState);
         setContentView(R.layout.a0_49zuoye);
         numbers = (EditText) findViewById(R.id.l_sms_ed1);
         content = (EditText) findViewById(R.id.l_sms_ed2);

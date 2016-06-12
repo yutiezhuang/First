@@ -84,5 +84,9 @@
         <activity android:name=".A0_48zuoye"></activity>
         <activity android:name=".A0_49zuoye"></activity>
         <activity android:name=".A0_50zuoye"></activity>
+        <activity android:name=".A0_51zuoye"></activity>
+        <activity android:name=".A0_52zuoye"></activity>
+        <activity android:name=".A0_53zuoye"></activity>
+        <activity android:name=".A0_54zuoye"></activity>
     </application>
 </manifest>
