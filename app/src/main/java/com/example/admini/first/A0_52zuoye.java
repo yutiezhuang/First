@@ -37,7 +37,20 @@ public class A0_52zuoye extends BaseActivity {
             @Override
             public void onResponse(Call<gupiao> call, Response<gupiao> response) {
                 gupiao pc = response.body();
-                et2.setText("股票名称："+pc.getRetData().getStockinfo().getName());
+                et2.setText("股票名称："+pc.getRetData().getStockinfo().getName()+"\n"+
+                             "股票代码："+pc.getRetData().getStockinfo().getCode()+"\n"+
+                        "日期："+pc.getRetData().getStockinfo().getDate()+"\n"+
+                        "开盘价："+pc.getRetData().getStockinfo().getOpenningPrice()+"\n"+
+                        "昨日收盘价："+pc.getRetData().getStockinfo().getClosingPrice()+"\n"+
+                        "今日最高价："+pc.getRetData().getStockinfo().getHPrice()+"\n"+
+                        "今日最低价："+pc.getRetData().getStockinfo().getLPrice()+"\n"+
+                        "当前价："+pc.getRetData().getStockinfo().getCurrentPrice()+"\n"+
+                        "价格涨幅："+pc.getRetData().getStockinfo().getGrowth()+"\n"+
+                        "涨幅比例："+pc.getRetData().getStockinfo().getGrowthPercent()+"\n"+
+                        "成交量股："+pc.getRetData().getStockinfo().getDealnumber()+"\n"+
+                        "成交金额："+pc.getRetData().getStockinfo().getTurnover()+"\n"+
+                        "周最高价："+pc.getRetData().getStockinfo().getValue52hPrice()+"\n"+
+                        "周最低价："+pc.getRetData().getStockinfo().getValue52lPrice());
 // et2.setText(pc.getMarket().getShanghai()+""+pc.getMarket().getShenzhen()+""+pc.getMarket().getDJI()+""+pc.getMarket().getHSI()+""+pc.getMarket().getINX()+""+pc.getMarket().getIXIC());
             }
 
