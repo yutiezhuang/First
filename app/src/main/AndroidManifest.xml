@@ -95,5 +95,6 @@
         <activity android:name=".A0_54zuoye1"></activity>
         <activity android:name=".A0_55zuoye"></activity>
         <activity android:name=".A0_56zuoye1"></activity>
+        <activity android:name=".A0_zhendong"></activity>
     </application>
 </manifest>

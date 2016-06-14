@@ -42,6 +42,7 @@ public class A0_50zuoye extends BaseActivity {
             recorder.setVideoEncoder(MediaRecorder.VideoEncoder.MPEG_4_SP);
             recorder.setVideoFrameRate(4);
             recorder.setOutputFile(file.getAbsolutePath());
+            recorder.setOrientationHint(90);
             recorder.setPreviewDisplay(sv.getHolder().getSurface());
 
             recorder.prepare();

@@ -80,7 +80,7 @@ public class A0_29zuoye extends BaseActivity {
             File file = new File(
                     System.currentTimeMillis() + ".jpg");
             OutputStream stream = new FileOutputStream(file);
-            baseBitmap.compress(Bitmap.CompressFormat.JPEG, 100, stream);
+            baseBitmap.compress(Bitmap.CompressFormat.PNG  , 100, stream);
             stream.close();
             // 模拟一个广播，通知系统sdcard被挂载
             Intent intent = new Intent();

@@ -63,7 +63,7 @@ public class A0_32zuoye extends BaseActivity {
     {
         Intent i = new Intent();
         i.setAction(Intent.ACTION_DIAL);
-        String data = "tel:4008308300";
+        String data = "tel:15769963191";
         i.setData(Uri.parse(data));
 
         startActivity(i);
