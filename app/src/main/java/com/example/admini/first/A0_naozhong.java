@@ -31,7 +31,7 @@ public class A0_naozhong extends Activity {
                 new TimePickerDialog(A0_naozhong.this, 0, new TimePickerDialog.OnTimeSetListener() {
                     @Override
                     public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
-                        Intent i=new Intent(A0_naozhong.this,naozhong_kaishi.class);
+                        Intent i=new Intent(A0_naozhong.this,naozhongkaishi.class);
                         PendingIntent pi=PendingIntent.getActivity(A0_naozhong.this,0,i,0);
                         Calendar c=Calendar.getInstance();
                         c.setTimeInMillis(System.currentTimeMillis());

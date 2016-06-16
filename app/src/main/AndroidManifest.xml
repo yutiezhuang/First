@@ -17,13 +17,25 @@
 
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:name=".MyApp">
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="nkKkeQTK37HAUT3VreylKRXMRqw9hT4t" />
         <activity android:name=".MainActivity"></activity>
         <activity android:name=".heart"></activity>
         <activity android:name=".ballActivity"></activity>
@@ -96,5 +108,9 @@
         <activity android:name=".A0_55zuoye"></activity>
         <activity android:name=".A0_56zuoye1"></activity>
         <activity android:name=".A0_zhendong"></activity>
+        <activity android:name=".naozhongkaishi"></activity>
+        <activity android:name=".A0_naozhong"></activity>
+        <activity android:name=".Ex58Activity"></activity>
+        <activity android:name=".A0_57zuoye"></activity>
     </application>
 </manifest>
